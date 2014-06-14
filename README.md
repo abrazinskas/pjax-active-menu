@@ -7,30 +7,36 @@ This is javascript plugin that uses regular expressions to map current url and t
 
 How to use it
 ================
+```javascript
+//by default, all items with attribute ‘url-matcher’ will be taken into an account. 
 $(document).ready(function(){
+
 $('ul.nav').pjax_menu();  
 });
+```
 
-
-by default, all items with attribute ‘url-matcher’ will be taken into an account. 
 or
-
+```javascript
+// an argument is a name of the attribute used on the navigation items. 
 $(document).ready(function(){
+
 $('ul.nav').pjax_menu('data-target');
+
 )};
+```
 
 
-where argument is a name of the attribute used on the navigation items. 
 
 
 HTML markup example
 -------------------
+```html
 <ul class="nav navbar-nav">
 					<li class="active"><a href="/?page=page1" data-target="\/\?page\=page1">Page1</a></li>
 					<li><a href="/?page=page2" data-target="\/\?page\=page2">Page2</a></li>
 					<li><a href="/?page=page3" data-target="\/\?page\=page3">Page3</a></li>
 				</ul>
-				
+```				
 
 
 Matchers (Regular expressions)
@@ -39,8 +45,9 @@ Matchers (Regular expressions)
 Regular expressions play a key role in mapping urls to navigation items. 
 Here are couple of examples of mappers, that can be used:
 
-\/pages/home ->  /pages/home
-\/gallery/photos/\d+ ->  /gallery/photos/1, /gallery/photos/100, /gallery/photos/99,etc
+`\/pages/home`  -> /pages/home
+
+`\/gallery/photos/\d+` ->  /gallery/photos/1, /gallery/photos/100, /gallery/photos/99,etc
 
 				
 Note
