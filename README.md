@@ -2,7 +2,7 @@ pjax-active-menu
 ================
 This plugin allows adding active class to the menu items if pjax is used.
 By default navigation items are not marked as being active, based on the current position. 
-This is javascript plugin that uses regular expressions to map current url and the appropriate navigation item.
+Pjax active menu is a javascript plugin that uses regular expressions to map current url and the appropriate navigation item.
 
 
 How to use it
