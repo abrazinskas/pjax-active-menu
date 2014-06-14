@@ -17,7 +17,7 @@ $('ul.nav').pjax_menu();
 
 or
 ```javascript
-// an argument is a name of the attribute used on the navigation items. 
+// an argument is a name of the attribute used on the navigation items which contains the regular expression. 
 $(document).ready(function(){
 
 $('ul.nav').pjax_menu('data-target');
