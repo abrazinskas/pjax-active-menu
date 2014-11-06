@@ -24,6 +24,9 @@ jQuery.fn.extend({
         $(document).on('pjax:complete', function () {
             $(that).pjax_menu(attr);
         });
+        window.onpopstate = function () {
+            $(that).pjax_menu(attr);
+        };
 
 
         //support functions
@@ -114,4 +117,3 @@ jQuery.fn.extend({
 
     }
 });
-
